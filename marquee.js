@@ -11,6 +11,7 @@ onload = function () {
             currentStep--;  // 因為要往左邊跑，所以 left 等於負數，同理如果要往右就是++
             
             // 如果移動距離大於總顯示範圍就要停下來(沒有要讓文字跑到最左邊，因這樣會剩下一片空白)
+            // Math.abs 將負數轉正數
             if (Math.abs(currentStep) > movingDistance) {
                 clearInterval(marqueeHandler);
                 return;  // 記得要return ，不然程式會一直跑下去
