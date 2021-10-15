@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Marquee</title>
+	<style>
+        #marquee {
+            max-width: 300px;
+            border: 1px solid red;
+            position: relative;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .marquee-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;  /* 必須，不換行 */
+            display: block;
+        }
+	</style>
+</head>
+<body>
+<div id="marquee">
+	<div class="marquee-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deleniti dolor rem
+		voluptate. Alias aliquid doloremque ea eligendi eveniet magnam, minus neque nulla possimus quas, quidem sit
+		tempore, vitae voluptate.
+	</div>
+</div>
+<script src="marquee.js"></script>
+</body>
+</html>
